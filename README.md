@@ -2,30 +2,17 @@
 
 一键脚本安装
 
-
-
 wget -N https://raw.githubusercontent.com/hjyml/xrayr1/master/install.sh && bash install.sh
-
-
-
 
 git clone https://github.com/hjyml/xrayr1 XrayR-release
 
-
-
 国内机子加速
+
 git clone https://ghproxy.com/https://github.com/hjyml/xrayr1 XrayR-release
-
-
-
-
-
 
 wget -N https://ghproxy.com/https://raw.githubusercontent.com/hjyml/xrayr1/master/install.sh && bash install.sh
 
-
-
-docker安装
+#docker安装
 
 yum install -y yum-utils
 
@@ -34,6 +21,7 @@ yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
     
 yum install docker-ce docker-ce-cli containerd.io -y
+
 yum clean all
 
 rpm --rebuilddb
